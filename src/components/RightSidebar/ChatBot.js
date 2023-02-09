@@ -20,13 +20,13 @@ export const handleUserInput = async (prompt)=>{
           
           const params_ = { 
               model: "text-davinci-003",
-              prompt: prompt,
+              prompt: prompt + "explain in 20",
               temperature: 0.9,
               max_tokens: 100,
               top_p: 1,
               frequency_penalty: 0,
               presence_penalty: 0,
-              stop : ["."],
+              // stop : ["."],
            };
           const requestOptions = {
             method: 'POST',
