@@ -9,7 +9,6 @@ export const Slide = () =>{
 const openai_api_key = process.env.REACT_APP_API_KEY
         
 export const handleUserInput = async (prompt)=>{
-           console.log(process.env.REACT_APP_API_KEY)
            if(prompt.length==0){
               return alert("Don't enter Empty Questions")
            }
