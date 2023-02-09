@@ -6,11 +6,10 @@ export const Slide = () =>{
       $(".chat-btn").one("click", function () { $('.chat-box').slideToggle(1100); });
     })
   }
-
-  
-const openai_api_key = process.env.OPEN_API_KEY
+const openai_api_key = process.env.REACT_APP_API_KEY
         
 export const handleUserInput = async (prompt)=>{
+           console.log(process.env.REACT_APP_API_KEY)
            if(prompt.length==0){
               return alert("Don't enter Empty Questions")
            }

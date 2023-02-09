@@ -11,6 +11,10 @@
 # production
 /build
 
+.env.staging
+
+.env
+
 ApiKey.js
 
 # misc
