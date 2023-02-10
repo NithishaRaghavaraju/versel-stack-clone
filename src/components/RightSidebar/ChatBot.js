@@ -12,7 +12,7 @@ export const handleUserInput = async (prompt)=>{
            if(prompt.length==0){
               return alert("Don't enter Empty Questions")
            }
-           var chat = document.querySelector(".chats")
+           var chat = document.querySelector(".chats");
            var input = $(".input-chat").val()
           let message1 = `<div class="my-chat"><p>${input}</p></div>`
          
